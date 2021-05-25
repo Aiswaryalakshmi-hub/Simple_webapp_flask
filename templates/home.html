@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+  <title>HOME</title>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+
+</head>
+
+<body>
+
+  <ul>
+    <li><a class="active" href="{{url_for('home')}}">Home</a></li>
+    <li><a href="{{url_for('magazine')}}">Magazine</a></li>
+    <li><a href="{{url_for('blog')}}">Blog</a></li>
+  </ul>
+
+  <div class="w3-container w3-teal">
+    <h1>KIDCODER</h1>
+  </div>
+
+  <div class="w3-content">
+
+    <div class="w3-row w3-margin">
+
+      <div class="w3-third">
+        <img src="{{url_for('static', filename='img/one.jpg')}}" style="width:100%;min-height:200px">
+      </div>
+      <div class="w3-twothird w3-container">
+        <h2>What is coding ?</h2>
+        <p>
+          Coding (or computer programming), is the process of providing instructions to a computer so it performs a specific task. 
+          Example: Languages like Java, Python, or Ruby. You can easily learn to code using a visual block language like Tynker.
+          code in the technology we use every day – our mobile phones, thermostats, televisions, cars, and even the device you’re using to read this wouldn’t exist without code
+        </p>
+      </div>
+
+    </div>
+    <div class="w3-row w3-margin">
+
+      <div class="w3-third">
+        <img src="{{url_for('static', filename='img/two.jpg')}}" style="width:100%;min-height:200px">
+      </div>
+      <div class="w3-twothird w3-container">
+        <h2>What are the best programming languages for kids?</h2>
+        <p>
+          Choosing the most helpful programming languages for children is most important for your kids to engage and increase their skills in coding. Here are the best coding languages for kids:
+
+          <p> 
+            <b>SCRATCH :</b>
+            Scratch is one of the most visually appealing of all the kid’s programming languages on the list, 
+            but the real reason it really shines is in the freedom of expression that it allows its students. 
+            The whole idea behind it was to simplify the process of creating animations, designing games, 
+            and building interactive stories so that literally anyone could do it from the ground up. 
+            With Scratch, it’s all about the simplicity that makes kids passionate about coding. 
+            The instant satisfaction of dragging and dropping commands and then seeing interactive stories, games, and animations unroll is wildly influential.
+            So, Scratch can be the first best choice for parents to use while teaching your kids to learn to code.
+          </p>    
+          <p>
+            <b>JAVASCRIPT :</b>
+              JavaScript is also one of the great options for children because almost now all the apps and websites are running on this coding language. 
+              Some of the main browsers like Google Chrome, Mozilla Firefox, Internet Explorer use JavaScript language as a primary option among all coding languages. 
+              If your children master this Javascript language, they’ll learn how to change simple web documents into amazing interactive apps and games.
+              And this is somewhat identical to the combination of PHP and Java languages. 
+              If you want to see your kids learn coding in an excellent way then javascript can be at your choice list.
+          </p>
+           <p>
+            <b>JAVA :</b>
+            By learning Java, kids will have an early start in computer education by introducing them to the programming languages.
+            Java is a particular language that belongs to an Object-oriented set of programming languages and thus Java for kids introduces them to a fundamental concept in the world of programming. 
+            The kids are made aware of object-oriented concepts.
+            Encapsulation, polymorphism, inheritance, and the relationship between classes and objects are taught and coupled with the syntax the kids can then start with writing small programs and see how it all works.
+
+           </p>   
+           <p>
+             <b>LUA :</b> 
+              The best scripting language that is excellent for learning text-based coding by kids is Lua. 
+              It is simple to learn, use, and set into applications. 
+              If you are looking for a free, elegant, powerful, portable, embeddable, and beginner-friendly coding language, then my choice would be a Lua. 
+              And also you should know the best thing about this Lua before choosing any other language is that it takes care of low-level things such as memory management for the user. 
+              Lua is similar to Python in the way that it eliminates a number of syntax issues that make coding difficult for kids.
+            
+           </p> 
+           <p>
+            <b>PYTHON :</b> 
+              Python is a great programming language with which to start learning to code. 
+              Python is a powerful, easy-to-read, high-level programming language. 
+              This means commands read like English words instead of complicated 0s and 1s and this makes it easy for kids to learn Python without a lot of experience.
+
+           </p>
+             
+        </p>
+      </div>
+
+    </div>
+    <div class="w3-row w3-margin">
+
+      <div class="w3-third">
+        <img src="{{url_for('static', filename='img/three.jpg')}}" style="width:100%;min-height:200px">
+      </div>
+      <div class="w3-twothird w3-container">
+        <h2>How to know your favorite programming language?</h2>
+        <p>
+          The software development world is filled amazing programming languages.
+          So one should get knowledge on every areas of computer science,once you get experienced in all fields
+          you may get your areas of interest 
+          <p><q><strong>TRY AND FAIL,BUT NEVER FAIL TO TRY!!!</strong></q></p> 
+        </p>
+      </div>
+
+    </div>
+    <div class="w3-row w3-margin">
+
+      <div class="w3-third">
+        <img src="{{url_for('static', filename='img/four.jpg')}}" style="width:100%;min-height:200px">
+      </div>
+      <div class="w3-twothird w3-container">
+        <h2>Realtime application of different programming language</h2>
+        <p>
+          <div style="overflow-x:auto;">
+          <table style="width:50%" border = "1" cellpadding = "1" cellspacing = "1">
+            <tr>
+              <th>Website</th>
+              <td>Google</td>
+              <td>Facebook</td>
+              <td>Youtube</td>
+              <td>Amazon</td>
+              <td>Wikipedia</td>
+              <td>Twitter</td>
+              <td>Bing</td>
+              <td>LinkedIn</td>
+              <td>Pinterest</td>
+              <td>Wordpress</td>
+              <td>MSN</td>
+          </tr>
+            <tr>
+              <th>Front end(Client-side)</th>
+              <td>JavaScript, TypeScript</td>
+              <td>JavaScript, Flow</td>
+              <td>JavaScript</td>
+              <td>JavaScript</td>
+              <td>JavaScript</td>
+              <td>JavaScript</td>
+              <td>JavaScript</td>
+              <td>JavaScript</td>
+              <td>JavaScript</td>
+              <td>JavaScript</td>
+              <td>JavaScript</td>
+            </tr>
+            <tr>
+              <th>Back-end(Server side)</th>
+              <td>C, C++, Go, Java, Python, Node  </td>
+              <td>Hack, PHP (HHVM), Python, C++, Java, Erlang, D, XHP, Haskell   </td>
+              <td>C, C++, Python, Java, Go              </td>
+              <td>Java,C++,Perl </td>
+              <td> PHP</td>
+              <td>C++,Java,Scala,Ruby </td>
+              <td>C++,C# </td>
+              <td> java,javascript,scala</td>
+              <td> Django,Erlang</td>
+              <td>PHP </td>
+              <td> C#</td>
+            </tr>
+            <tr>
+              <th>Database</h>
+              <td>Bigtable, MariaDB</td>
+              <td>MariaDB, MySQL, HBase, Cassandra</td>              
+              <td> Vitess, BigTable, MariaDB</td>              
+              <td> PostgreSQL, RDS, RDS Aurora</td>              
+              <td> MariaDB</td>
+              <td> MySQL</td>
+              <td> Microsoft SQL Server, Cosmos DB</td>
+              <td>Voldemart</td>
+              <td> MySQL,Redis</td>
+              <td>MariaDB </td>
+              <td> Microsoft SQL server</td>
+            </tr>
+            <tr>
+              <th>Note</th>
+              <td>The most used search engine in the world</td>
+              <td> The most visited social networking site</td>
+              <td> The most visited video sharing site [YouTube is also owned by Google, the first lisiting (can be seen above)]</td>
+              <td>Popular internet shopping</td>
+              <td>"MediaWiki" is programmed in PHP; free online encyclopedia</td>
+              <td>Popular social network.</td>
+              <td>Search engine from Microsoft.</td>
+              <td>World's largest professional network.</td>
+              <td>Search engine for ideas.</td>
+              <td>Website manager software.</td>
+              <td>An email client, for simple use. Previously known as "messenger", not to be confused with Facebook's messaging platform.</td>
+            </tr>
+           
+          </table>
+          </div>
+        </p>
+      </div>
+
+    </div>
+    <div class="w3-row w3-margin">
+
+      <div class="w3-third">
+        <img src="{{url_for('static', filename='img/five.jpg')}}" style="width:100%;min-height:200px">
+      </div>
+      <div class="w3-twothird w3-container">
+        <h2>Ten Games to learn coding</h2>
+        <p>
+          1.codewar
+        </p>
+        <p>
+          2.codemonkey
+        </p>
+        <p>
+          3.checkiO
+        </p>
+        <p>
+          4.codingame
+        </p>
+        <p>
+          5.codehunt
+        </p>
+      
+      </div>
+
+    </div>
+    
+</body>
+
+</html>
