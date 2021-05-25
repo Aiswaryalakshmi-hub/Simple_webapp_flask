@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Magazine</title>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+  
+  </head>
+<body>
+    <ul>
+        <li><a  href="{{url_for('home')}}">Home</a></li>
+        <li><a class="active" href="{{url_for('magazine')}}">Magazine</a></li>
+        <li><a href="{{url_for('blog')}}">Blog</a></li>
+      </ul>
+
+    <div class="w3-light-grey w3-padding-64 w3-margin-bottom w3-center">
+        <h1 class="w3-jumbo">Python-Playing with Numbers !!!</h1>
+        <br>
+        <div class="w3-third">
+            <div class="w3-container w3-pale-red" style="margin-left: 200px;">
+                <h2>Hi kids,</h2>
+                <p class="w3-justify">Here, we will learn how to perform some basic mathematical operations with Python, 
+                    the Number Data Type — one of Python’s built-in types
+                    and details about expressions, statements, and variables. SO LETS GET STARTED!!!
+                </p>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <div class="w3-row-padding w3-content" style="max-width:1400px">
+        <div class="w3-twothird">
+            <img src="{{url_for('static', filename='img/six.jpg')}}" alt="Notebook" style="width:100%">
+            <h2><b>BASIC ARITHMETIC OPERATION</b></h2>
+            <div class="w3-justify">
+                <p> In math, operators are used to alter and combine numbers.<br> <b>ADDITION :</b> Addition operator lets you add two (or more) numbers.<br>
+                    <b>SUBTRACTION :</b>subtraction operator is used to subtract one number from another<br><b>MULTIPLICATION :</b>multiplication operator is used to multiply two numbers <br>
+                    <b>DIVISION :</b>Divison operator is used to divide one number from another <br>
+                    Python uses all the basic math operators that you already know — addition, subtraction, multiplication, and division — as well as more advanced operators, like exponents, that we won’t go into right now</p>
+                    <br>
+                    <div class="w3-container w3-light-grey">
+                        <p class="w3-justify">
+                            >> 1 + 2 <br>
+                            3 <br>
+                            >> 5-3 <br>
+                            2 <br>
+                            >> 2*10 <br>
+                            20 <br>
+                            >> 10/5 <br> 
+                            2 <br>                           
+                        </p>
+                    </div>
+                <h2><b>THE ORDER OF OPERATIONS</b></h2>
+                <div class="w3-justify">
+                    <p>An operation is anything that uses an operator.<br>
+                        We use parentheses in a programming language to control the order of operations. Parentheses are always executed first.<br> <br>
+                        Multiplication and division have a higher order than addition and subtraction, which means that they’re performed first. <br>
+                        In other words, if you enter an equation in Python, multiplication or division is performed before addition or subtraction <br><br>Don't bother with exponent for now.
+                        Operations are always evaluated from left to right when having the same precedence. </p>
+                </div>
+                <h2><b>EXPRESSIONS AND STATEMENTS</b></h2>
+                <div class="w3-justify">
+                    <p> Python programming has concepts similar to phrases and sentences, which are called expressions and statements.<br>
+                        You can combine values, variables, and operators to create small pieces of code called expressions, like "3 + 4"<br> 
+                        Statements are single lines or short blocks of code that do something in a program, such as" diamonds = 4 + 12"<br>
+                     </p>
+                </div>
+            <h2><b>VARIABLES</b></h2>
+            <div class="w3-justify">
+                <p> Data is any information you might want to record, such as numbers, names or any kind of text 
+                    — in Python, texts are called strings — , lists of items, and so on.<br>
+                    <br>
+                    The variable’s name is always on the left of the equal sign, and the value you want to store is always on the right <br>
+                    eg : age = 22<br><br>
+
+                    <b>Syntax Rules for Variables</b> <br>
+
+                    You need to know a few syntax rules for naming variables so Python can understand them:<br>
+                            <ul>
+                                <li>Don’t include symbols in your variable names, except for underscores (_), or you’ll get a syntax error. White space inside the variable name is not allowed also.</li>>
+                                <li> Don’t start a variable name with a number, as in 3player. Using numbers elsewhere in a variable name is fine, as in player3.</li>>
+                                <li>You don’t need to add spaces on either side of the equal sign: your program will run fine without them. But they do make the code easier to read, 
+                                    so it’s a good idea to add them.<br>
+                                    For example player='Little Vin' is equal to player = 'Little Vin' , adding space just makes them more readable.</li>>
+                            </ul>
+                 </p>
+            </div>
+                <h2><b>COMMENTS</b></h2>
+                <div class="w3-justify">
+                    <p>In any programming language a comment is a programmer-readable.<br>
+
+                        They are added to make the source code easier for humans to understand, and are generally ignored by 
+                        compilers and interpreters. <br>
+                        
+                        In Python code, anything after a # symbol in a statement is a comment and is IGNORED by the Python Interpreter — think of them as code the machine don't see, as the robot in the figure above.
+                        <br>
+                        Reasons to use:
+                        <br>
+                            <p>1.Comments can be used to explain Python code.</p>
+                            <p>2.Comments can be used to make the code more readable.</p>
+                            <p>3.Comments can be used to prevent execution when testing code.</p>
+                    </p>
+            </div>
+                <h2><b>PYTHON NUMBERS</b></h2>
+                <div class="w3-justify">
+                    <p> There are three numeric types in Python:  <br> 
+                        <p>1.int</p>
+                        <p>2.Float </p>
+                        <p>3.complex </p>
+                    <br>
+                    We will ignore complex numbers by now.
+                    <br><br>
+                    Also, don't worry if you don't know things like math with negative numbers or math with decimal points,
+                    Python will do the math for us.<br>
+                    
+                    <b>Integers (int)</b> <br><br>
+
+                    Integers are positive or negative whole numbers.<br>
+
+                    Values such as 10, 32, −6, 194689, and −5 are integers, but 3.14 and 6.025 are not.<br>
+                    Python also provides a built-in function called int() that converts any passed argument to an integer.<br><br>
+                
+                    <b>Floats (float)</b> <br><br>
+
+                    Not all numbers are whole numbers.<br>
+
+                    Decimal points are used to represent values that can’t be described with whole numbers.<br>
+
+                    For example, you might have half (0.5) of an orange.<br>
+
+                    Numbers that use decimal points are called floating-point numbers, or floats.<br>
+                    
+                    Python also provides a built-in function called float() that converts any passed argument to a float number
+                    </p>
+                
+                </div> 
+        
+    </div>
+
+</body>
+
+</html>
